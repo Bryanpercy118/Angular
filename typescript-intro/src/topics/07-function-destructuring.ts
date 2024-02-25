@@ -19,24 +19,27 @@ interface TaxCalculationoptions{
     products: Product[];
 }
 
-function taxCalculation(options: TaxCalculationoptions):number[]{
+//function taxCalculation({tax,products}: TaxCalculationoptions):[number,number]{
+function taxCalculation(options: TaxCalculationoptions):[number,number]{
+    const {tax,products} = options;
+    
     let totalTax = 0;
-
-    options.products.forEach(product => {
-        totalTax += product.price;
+    
+    products.forEach(({price}) => {
+        totalTax += price;
     });
     
-    return [totalTax, totalTax*options.tax];
+    return [totalTax, totalTax*tax];
 }
 
 const shoppingCart =[phone, tablet];
 const tax =0.15;
 
-const result = taxCalculation({
+const [total, totalTax] = taxCalculation({
     products: shoppingCart,
     tax
 })
 
-console.log('Total', result[0]);
-console.log('Tax', result[1]);
+console.log('Total', total);
+console.log('Tax', totalTax);
 export{};
