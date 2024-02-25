@@ -1,18 +1,17 @@
-
 export interface Product{
     description: string;
     price: number;
 }
 
-const phone : Product = {
-    description: 'iPhone',
-    price: 150.0
-}
+// const phone : Product = {
+//     description: 'iPhone',
+//     price: 150.0
+// }
 
-const tablet : Product = {
-    description: 'iPad',
-    price: 200.0
-}
+// const tablet : Product = {
+//     description: 'iPad',
+//     price: 200.0
+// }
 
 interface TaxCalculationoptions{
     tax: number;
@@ -32,13 +31,13 @@ export function taxCalculation(options: TaxCalculationoptions):[number,number]{
     return [totalTax, totalTax*tax];
 }
 
-const shoppingCart =[phone, tablet];
-const tax =0.15;
+// const shoppingCart =[phone, tablet];
+// const tax =0.15;
 
-const [total, totalTax] = taxCalculation({
-    products: shoppingCart,
-    tax
-})
+// const [total, totalTax] = taxCalculation({
+//     products: shoppingCart,
+//     tax
+// })
 
-console.log('Total', total);
-console.log('Tax', totalTax);
+// console.log('Total', total);
+// console.log('Tax', totalTax);
