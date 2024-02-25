@@ -9,8 +9,6 @@ interface Character {
     hometown?:string;
 }
 
-
-
 const strider : Character = {
     name:'Strider',
     hp:100,
