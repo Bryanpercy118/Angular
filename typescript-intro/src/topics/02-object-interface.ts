@@ -10,6 +10,7 @@ interface Character {
 }
 
 
+
 const strider : Character = {
     name:'Strider',
     hp:100,
