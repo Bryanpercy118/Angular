@@ -5,7 +5,8 @@ import './style.css'
 //import './topics/04-homework.types.ts'
 //import './topics/05-basic-destructuring.ts'
 //import './topics/06-array-destructuring.ts'
-import './topics/07-function-destructuring.ts'
+//import './topics/07-function-destructuring.ts'
+import './topics/08-import-export'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
