@@ -1,4 +1,4 @@
-export function whatsMyType<T>(argument:any):any{
+export function whatsMyType(argument:any):any{
     return argument;
 }
 

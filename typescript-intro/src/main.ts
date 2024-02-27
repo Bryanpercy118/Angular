@@ -8,8 +8,9 @@ import './style.css'
 //import './topics/07-function-destructuring.ts'
 //import './topics/08-import-export'
 //import './topics/09-classes'
-import './topics/10-generics'
-
+//import './topics/10-generics'
+//import './topics/11-decorators'
+import './topics/12-optional-chaining'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
  Hola mundo
