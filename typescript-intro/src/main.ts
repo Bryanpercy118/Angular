@@ -7,7 +7,8 @@ import './style.css'
 //import './topics/06-array-destructuring.ts'
 //import './topics/07-function-destructuring.ts'
 //import './topics/08-import-export'
-import './topics/09-classes'
+//import './topics/09-classes'
+import './topics/10-generics'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
