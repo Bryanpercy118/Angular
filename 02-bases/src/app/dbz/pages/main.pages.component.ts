@@ -9,10 +9,20 @@ import { Character } from '../interfaces/character.interface';
 export class MainPageComponent implements OnInit {
   constructor() { }
 
-  public characters: Character[]=[{
+  public characters: Character[]=[
+    {
     name: 'Goku',
-    power: 100
-  }];
+    power: 400
+    },
+    {
+      name: 'Vegueta',
+      power: 150
+    },
+    {
+      name: 'Trunks',
+      power: 120
+      }
+];
 
   ngOnInit() { }
 }
