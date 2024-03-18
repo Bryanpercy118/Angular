@@ -21,8 +21,18 @@ export class MainPageComponent implements OnInit {
     {
       name: 'Trunks',
       power: 120
-      }
+    }
 ];
+  onNewCharacter( character : Character):void{
+
+    this.characters.push(character);
+
+  }
+
+  onDeleteId(index:number):void{
+    this.characters.splice(index,1);
+  }
+
 
   ngOnInit() { }
 }
